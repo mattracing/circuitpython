@@ -1,0 +1,18 @@
+LD_FILE = boards/samd21x18-bootloader-external-flash.ld
+USB_VID = 0x04D8
+USB_PID = 0xED36
+USB_PRODUCT = "Eltech Nonthue M0"
+USB_MANUFACTURER = "Microchip"
+
+SPI_FLASH_FILESYSTEM = 1
+EXTERNAL_FLASH_DEVICE_COUNT = 2
+EXTERNAL_FLASH_DEVICES = "W25Q16JV_IQ, GD25Q16C"
+LONGINT_IMPL = MPZ
+
+CHIP_VARIANT = SAMD21G18A
+CHIP_FAMILY = samd21
+
+# Tweak inlining depending on language.
+ifeq ($(TRANSLATION), zh_Latn_pinyin)
+CFLAGS_INLINE_LIMIT = 60
+endif

@@ -1,5 +1,5 @@
 LD_FILE = boards/samd21x18-bootloader-external-flash.ld
-USB_VID = 0x04D8
+USB_VID = 0x239A #0x04D8 is a Microchip Code. To work with Mu Editor code must be Adafruit 0x239A
 USB_PID = 0xED36
 USB_PRODUCT = "Nonthue M0"
 USB_MANUFACTURER = "Eltech"
